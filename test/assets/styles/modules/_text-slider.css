@@ -1,0 +1,26 @@
+.text-slider {
+  background-color: $mainColor;
+  position: relative;
+  text-align: center;
+  p:first-child {
+    max-width: 800px;
+    padding-top: 50px;
+    font-size: 22px;
+    font-family: FreightBig Pro;
+    line-height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $textColor;
+    
+    
+  }
+  p:last-child {
+    color: gray;
+    font-size: .8rem;
+    line-height: 6em;
+    letter-spacing: 3px;
+  }
+  .sa_owl_theme .owl-dots .active span, .sa_owl_theme .owl-dots .active span:hover {
+    background-color: #ff7aa9!important;
+  }
+}

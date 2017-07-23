@@ -1,0 +1,14 @@
+.site-content {
+  @mixin atLarge {
+    float: right;
+    width: 90%;
+  }
+  @mixin atLarge {
+    float: right;
+    width: 87%;
+  }
+  
+  img {
+    display: block;
+  }
+}

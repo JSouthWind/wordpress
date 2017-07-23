@@ -1,0 +1,29 @@
+.block4 {
+  background-color: #64b5e9;
+  
+  & .row{
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+
+    @mixin atMedium {
+      display: block;
+
+    }
+
+    .block4__1 {
+      -webkit-box-ordinal-group: 2;
+    }
+
+    .block4__2 {
+      -webkit-box-ordinal-group: 1;
+    }
+    
+  }
+  
+}

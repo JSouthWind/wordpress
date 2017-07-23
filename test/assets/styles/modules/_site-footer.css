@@ -1,0 +1,58 @@
+.site-footer {
+  background-color: $themeColor;
+  color: $secondColor;
+  text-align: center;
+  padding: 2rem 0;
+  
+  &__badges img {
+    padding: 20px;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+    
+    @mixin atMedium {
+      display: inline-block;
+    }
+  }
+  
+  &__copyright {
+    font-size: 0.8rem;
+  }
+  
+  &__social-links {
+    margin: 3rem 0;
+
+  }
+  
+  &__social-links a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #3f4046;
+    margin: 0 10px;
+    color: white;
+    display: inline-block;
+    @mixin atSmall {
+      width: 48px;
+      height: 48px;
+    }
+    
+    .fa {
+      font-size: 1rem;
+      transition: color 0.5s linear;
+      transform: translate(0, 3px);
+      
+      @mixin atSmall {
+        font-size: 1.5rem;
+        transform: translate(0, 12px);
+      }
+    }
+    
+    .fa:hover {
+      color: #ff2f92;
+    }
+  }
+  
+  
+  
+}

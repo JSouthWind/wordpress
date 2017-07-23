@@ -1,0 +1,53 @@
+* {
+  font-family: ProximaNova-Light, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+
+h1 {
+  text-transform: capitalize;
+  line-height: 1em;
+  font-family: FreightBig Pro;
+  font-size: 1.5rem;
+  
+  @mixin atSmall {
+    font-size: 2.5rem;
+  }
+
+  @mixin atMedium {
+    font-size: 2.5rem;
+  }
+
+  @mixin atLarge {
+    font-size: 3.1rem;
+  }
+  
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.white {
+  color: white;
+  border-color: white;
+}
+
+.black {
+  h1 {
+    color: black;
+  }
+  
+  p {
+    color: grey;
+  }
+}

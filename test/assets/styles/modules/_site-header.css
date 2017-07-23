@@ -1,0 +1,135 @@
+.site-header {
+  height: 65px;
+  
+  @mixin atLarge {
+    float: left;
+    width: 14%;
+    height: 100%;
+    display: table;
+  }
+  
+  @mixin atLarge {
+    float: left;
+    width: 10%;
+    height: 100%;
+    display: table;
+  }
+  &__logo {
+    text-align: center;
+    top: 50px;
+    position: fixed;
+    width: 12%;
+    display: none;
+    @mixin atLarge {
+      display: block;
+      width: 13%;
+    }
+  }
+  
+  &__logo-small {
+    float: left;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    z-index: 1001;
+    @mixin atLarge {
+      display: none;
+    }
+  }
+  
+  .main-navigation {
+    @mixin atLarge {
+      float: right;
+      position: fixed;
+      top: 260px;
+      width: 10%;
+    }
+    
+    &__btn {
+      background-color: transparent;
+      border: 0;
+      background: url('assets/images/menu_icon.png');
+      width: 84px;
+      height: 17px;
+      position: absolute;
+      top: 22px;
+      right: 11px;
+      z-index: 1001;
+    }
+    
+    
+    
+    
+    ul {
+      margin-top: 80px;
+      
+      float: none;
+      width: 110px;
+      
+      @mixin atLarge {
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+      }
+    }
+    
+    li {
+      list-style: none;
+      margin-top: 20px;
+      
+      a {
+        text-align: left;
+        transition: 0.6s;
+        border-bottom: 1px solid #999;
+        display: inherit;
+        font-size: .7rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        
+      }
+    }
+  }
+  
+  .toggled .menu-main-menu-container {
+
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1000;
+    
+    ul {
+      width: 140px;
+    }
+  }
+  
+  /* Small menu. */
+  .menu-main-menu-container {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+  
+  .menu-toggle,
+  .main-navigation.toggled .menu-main-menu-container {
+    display: block;
+  }
+  
+  @mixin atLarge {
+    .menu-toggle {
+      display: none;
+    }
+    .main-navigation ul {
+      display: block;
+    }
+  }
+
+}
